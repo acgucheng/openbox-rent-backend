@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: rent
+  datasource:
+    url: jdbc:mysql://database-1-test.cdsga6wkuov5.ca-central-1.rds.amazonaws.com:3306/rent
+    username: admin
+    password: ENC(3+d69pJ1y6DQvKYApqpRskMweHkyOKR79gx4v9NGMRcR+qvY1GBsv7X7lu5B0eW2MayVb3XwtiuuUwZNHQhkWg==)
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+  liquibase:
+    change-log: liquibase/change-log.sql
+server:
+  servlet:
+    context-path: /api/rent
